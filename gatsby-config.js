@@ -4,7 +4,22 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `Hassan`,
+    siteTitleAlt: `M.HassanAhmed`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `HassanAhmed`,
+    
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://www.hassan11196.codes`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@hassan11196`,
+    // Used for SEO
+    siteDescription: `M. Hassan Ahmed Portfolio - I'm a Junior at FAST-NUCES, Python and React-Js Developer and a Budding Data Scientist.`,
   },
   plugins: [
     {
@@ -21,8 +36,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        short_name: `Hassan`,
+        description: `M. Hassan Ahmed Portfolio - I'm a Junior at FAST-NUCES, Python and React-Js Developer and a Budding Data Scientist.`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
@@ -43,5 +58,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+
   ],
 }
